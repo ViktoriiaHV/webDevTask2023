@@ -1,0 +1,45 @@
+.button {
+  text-align: center;
+  text-decoration: none;
+  padding: 1.7rem;
+
+  --primary-color: #ed4c5c;
+  --secondary-color: #fff;
+
+  &--primary {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+
+  &--secondary {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+
+  &--text {
+    background-color: transparent;
+  }
+
+  &--button {
+    border-radius: 6px;
+    text-transform: uppercase;
+  }
+
+  &--small {
+    min-width: 8rem;
+    max-width: 8rem;
+    font-size: 1.2rem;
+  }
+
+  &--medium {
+    min-width: 16rem;
+    max-width: 16rem;
+    font-size: 1.4rem;
+  }
+
+  &--large {
+    min-width: 24rem;
+    max-width: 24rem;
+    font-size: 1.6rem;
+  }
+}

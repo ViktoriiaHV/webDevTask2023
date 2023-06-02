@@ -1,9 +1,9 @@
-import './index.css';
-import Heading from '../../components/heading';
-import Text from '../../components/text';
-import focusImg from '/focus.png';
-import iconsImg from '/icons.png';
-import ctaModel from '../../models/CTA.model';
+import "./index.css";
+import Heading from "../../components/heading";
+import Text from "../../components/text";
+import focusImg from "/focus.png";
+import iconsImg from "/icons.png";
+import ctaModel from "../../models/CTA.model";
 
 const CTA = () => {
   return (
@@ -13,7 +13,11 @@ const CTA = () => {
           <Heading level={2} color="white">
             {ctaModel.heading}
           </Heading>
-]          <Text color="white" size="14px" style={{margin: '4rem 0', lineHeight: '19.6px'}}>
+          <Text
+            color="white"
+            size="14px"
+            style={{ margin: "4rem 0", lineHeight: "19.6px" }}
+          >
             {ctaModel.text}
           </Text>
           <img src={iconsImg} alt="Icons" />
@@ -22,9 +26,8 @@ const CTA = () => {
           <img src={focusImg} alt="Focus" />
         </div>
       </div>
-      
     </div>
-  )
+  );
 };
 
 export default CTA;

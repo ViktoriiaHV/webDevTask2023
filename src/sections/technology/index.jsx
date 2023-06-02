@@ -37,7 +37,7 @@ const Technology = () => {
         <Heading level={2}>
           Technology
         </Heading>
-        <div className="features">
+        <div className="technologies">
           {features.map((feature, index) => (
             <Feature key={index} {...feature} />
           ))}

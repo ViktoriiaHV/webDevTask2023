@@ -13,7 +13,7 @@ const CTA = () => {
           <Heading level={2} color="white">
             {ctaModel.heading}
           </Heading>
-          <Text color="white">
+]          <Text color="white" size="14px" style={{margin: '4rem 0', lineHeight: '19.6px'}}>
             {ctaModel.text}
           </Text>
           <img src={iconsImg} alt="Icons" />

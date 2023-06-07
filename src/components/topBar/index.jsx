@@ -20,9 +20,8 @@ const Topbar = () => {
   }, []);
 
   const handleMenuClick = useCallback(() => {
-    setShowMenu(!showMenu);
-  }, [scrollPosition]);
-
+    setShowMenu(prevShow => !prevShow);
+  }, []);
 
   return (
     <div className={`topbar ${scrollPosition > 0 ? 'scroll' : ''}`}>
@@ -43,7 +42,7 @@ const Topbar = () => {
           <a className="link" href="#">SIGN UP</a>
         </div>
 
-        <div className="burger-menu" onClick={handleMenuClick}>
+        <div className='burger-menu' onClick={handleMenuClick}>
           <FaBars />
         </div>
       </div>

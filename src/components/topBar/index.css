@@ -5,7 +5,7 @@
   width: 100%;
   background-color: transparent;
   color: white;
-  z-index: 999;
+  z-index: 999; 
   transition: background-color 0.3s ease;
 
   & .topbar-container {
@@ -71,6 +71,7 @@
   display: none;
   font-size: 2rem;
   cursor: pointer;
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -84,5 +85,9 @@
 
   .burger-menu {
     display: block;
+  }
+
+  .menu.show {
+    display: flex;
   }
 }
